@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+    --button-color: #F7D9C4;
+    --icon-pink: #FF8484;
+    --bg-gray: #EFEFEF;
+    --text-color: #777777;
+    --icon-gray: #777777;
+    --bg-black: #31363B;
+    --bg-blue: #DCE8EB;
+    --footer-color: #14191E;
+    --bg-black-2: #1B2026;
+
+    --font: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+/* End Container */
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+
+.button a {
+    display: inline-block;
+    padding: 20px 30px;
+    color: #000;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+.button-trans {
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+}
+
+.button-trans:hover {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+}
+
+.button-black {
+    background-color: #232323;
+}
+
+.button-black a {
+    color: #fff;
+}
+
+.button-black:hover {
+    background-color: #000;
+}
+
+/* End Button */
+
+/* Box */
+.box {
+    margin-bottom: 30px;
+}
+
+.box .box-desc {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.box .box-head {
+    font-size: 60px;
+    color: #000;
+    font-weight: bold;
+}
+
+.box .box-head.small {
+    font-size: 26px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.box .box-head.small + .box-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+@media (max-width: 991.98px) {
+    .box .box-head {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .box .box-head {
+        font-size: 40px;
+    }
+}
+/* End Box */
+
